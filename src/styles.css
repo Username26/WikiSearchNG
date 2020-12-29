@@ -1,1 +1,133 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0 auto;
+}
+
+app-root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1% repeat(4, 22%) 1%;
+  grid-template-rows: 0% repeat(3, 30%) 0%;
+  grid-template-areas:
+    ". . . . . ."
+    ". item1 item2 item3 item4 ."
+    ". item10 form form item5 ."
+    ". item9 item8 item7 item6 ."
+    ". . . . . .";
+  column-gap: 2%;
+  row-gap: 2%;
+  position: absolute;
+  border-style: solid;
+  border-radius: 20px;
+  font-family: 'Poppins';
+}
+
+app-form {
+  grid-area: form;
+  vertical-align: middle;
+  text-align: center;
+  display: table;
+  font-family: inherit;
+}
+
+form {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+input[value="clear"] {
+  font-family: "Poppins";
+  font-size: 1em;
+  width: 102px;
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(114, 113, 113);
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+input[value="search"] {
+  font-family: "Poppins";
+  font-size: 1em;
+  width: 102px;
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: rgb(114, 113, 113);
+  border-width: 1px;
+  border-radius: 2px;
+  margin-right: 4px;
+}
+
+input[type="text"] {
+  font-family: "poppins";
+  width: 202px;
+
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(196, 195, 195);
+}
+
+.item1 {
+  grid-area: item1;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item2 {
+  grid-area: item2;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item3 {
+  grid-area: item3;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item4 {
+  grid-area: item4;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item5 {
+  grid-area: item5;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item6 {
+  grid-area: item6;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item7 {
+  grid-area: item7;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item8 {
+  grid-area: item8;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item9 {
+  grid-area: item9;
+  border-style: inherit;
+  border-radius: inherit;
+}
+
+.item10 {
+  grid-area: item10;
+  border-style: inherit;
+  border-radius: inherit;
+}
