@@ -1,6 +1,8 @@
     <form>
-        <input type="text" id="searchQuery" (keyup)="onKey($event)" ><br>
-        <input type="button" value="search">
-        <input type="button" value="clear">
+        <input type="text" id="searchQuery" (keyup)="onKey($event)" value=''><br>
+        <input type="button" value="search" (click)="onClickSearch()">
+        <input type="button" value="clear" (click)="onClickClear()">
     </form>
-<p>{{searchQuery}}</p>
+
+    <p class="item1" *ngIf="queryString">{{searchQuery}}</p>
+    <!-- <div *ngFor="let div of divs" id="div{{div}}">Newly div created</div> -->

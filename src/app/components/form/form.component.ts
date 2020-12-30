@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FormComponent implements OnInit {
 
   searchQuery:string="";
+  queryString = false;
 
   constructor() { }
 
@@ -16,6 +17,15 @@ export class FormComponent implements OnInit {
   }
 
   onKey(event: any){
-    this.searchQuery += event.target.value + ' | ';
+    this.searchQuery = event.target.value;
+  }
+  
+  onClickSearch(){
+    this.queryString = true;
+  }
+
+  onClickClear(){
+    this.searchQuery = "";
+    {{(<HTMLInputElement>document.getElementById('searchQuery')!).value=''}}
   }
 }
