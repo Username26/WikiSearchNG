@@ -1,5 +1,6 @@
     <form>
-        <input type="text" id="searchQuery" name="searchQuery" size="30"><br>
+        <input type="text" id="searchQuery" (keyup)="onKey($event)" ><br>
         <input type="button" value="search">
         <input type="button" value="clear">
     </form>
+<p>{{searchQuery}}</p>

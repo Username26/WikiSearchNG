@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { ResultItem } from 'src/app/models/resultItem';
 
 @Component({
   selector: 'app-results',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./results.component.css']
 })
 export class ResultsComponent implements OnInit {
+
+  // results:ResultItem[]; 
 
   constructor() { }
 

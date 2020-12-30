@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+  searchQuery:string="";
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
+  onKey(event: any){
+    this.searchQuery += event.target.value + ' | ';
+  }
 }
