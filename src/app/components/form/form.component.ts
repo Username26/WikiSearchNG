@@ -25,7 +25,7 @@ export class FormComponent implements OnInit {
 
   onSearch(){
     (this.http.get<any>(this.url + this.searchQuery).toPromise().then(data => {
-      console.log(data)
+      console.log(data.response.docs[0].id)
     }));
   }
 
