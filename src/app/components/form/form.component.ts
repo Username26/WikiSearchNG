@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http'
 import { Plural } from '@angular/common';
 import { ResultsComponent } from '../results/results.component';
 import { ResultlistService } from 'src/app/resultlist.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-form',
@@ -15,7 +16,7 @@ export class FormComponent implements OnInit {
   searchQuery:string="";
   url = '/solr/wiki/select?indent=on&defType=dismax&df=content&qf=id^20.0+content^2&q='
 
-  constructor(private http: HttpClient, private searchResult: ResultlistService){ 
+  constructor(private http: HttpClient, private searchResult: ResultlistService, private router: Router){ 
   }
 
   ngOnInit(): void {
@@ -32,7 +33,9 @@ export class FormComponent implements OnInit {
     (this.http.get<any>(this.url + this.searchQuery).toPromise().then(data => {
       this.searchResult.addSearchResults(data.response.docs);
     }));
-    console.log(this.searchResult.getSearchResults());
+    // setTimeout(() => {console.log(this.searchResult.getSearchResults())}, 200 );
+    setTimeout(() => {this.router.navigate(['/results'])}, 300)
+    setTimeout(() => {this.searchResult.searchClicked.next(true)},300)
     
   }
 

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +7,7 @@ import { Injectable } from '@angular/core';
 export class ResultlistService {
 
   private searchResults! : object;
+  searchClicked : BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   addSearchResults(results: object){
     this.searchResults = results;
