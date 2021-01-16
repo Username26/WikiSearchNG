@@ -11,18 +11,22 @@ import { Plural } from '@angular/common';
 export class FormComponent implements OnInit {
 
   searchQuery:string="";
-  url = '/solr/wiki/select?indent=on&defType=dismax&df=content&q=AKM&qf=id^20.0+content^2'
+  url = '/solr/wiki/select?indent=on&defType=dismax&df=content&qf=id^20.0+content^2&q='
 
   constructor(private http: HttpClient){ 
-    (this.http.get<any>(this.url).toPromise().then(data => {
-      console.log(data)
-    }));
   }
 
   ngOnInit(): void {
   }
 
   onKey(event: any){
-    this.searchQuery += event.target.value + ' | ';
+    this.searchQuery = event.target.value;
   }
+
+  onSearch(){
+    (this.http.get<any>(this.url + this.searchQuery).toPromise().then(data => {
+      console.log(data)
+    }));
+  }
+
 }
