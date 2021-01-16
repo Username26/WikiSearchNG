@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "WikiSearchNG"
+  "defaultProject": "WikiSearchNG",
+  "cli": {
+    "analytics": "0a757641-d9b0-4ff6-a71a-70428dac961b"
+  }
 }

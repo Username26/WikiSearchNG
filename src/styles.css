@@ -1,5 +1,6 @@
 body {
   margin: 0 auto;
+  background-color: dimgray;
 }
 
 app-root {
@@ -35,9 +36,10 @@ form {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  background-color: dimgray;
 }
 
-input[value="clear"] {
+input[value="Clear"] {
   font-family: "Poppins";
   font-size: 1em;
   width: 102px;
@@ -49,7 +51,7 @@ input[value="clear"] {
   border-radius: 2px;
 }
 
-input[value="search"] {
+input[value="Search"] {
   font-family: "Poppins";
   font-size: 1em;
   width: 102px;

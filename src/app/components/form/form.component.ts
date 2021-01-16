@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -9,7 +10,7 @@ export class FormComponent implements OnInit {
 
   searchQuery:string="";
 
-  constructor() { }
+  constructor(){ }
 
   ngOnInit(): void {
 
