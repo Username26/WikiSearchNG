@@ -43,9 +43,9 @@
   </div>
   <h1>PIRATEPEDIA</h1>
   <input type="text" id="searchQuery" (keyup)="onKey($event)"><br>
-  <input type="submit" value="Search" onclick="location.href='/results.html'">
+  <a routerLink="/results"><input type="button" value="Search" (click)="onSearch()"></a>
   <input type="reset" value="Clear">
-  <p>{{searchQuery}}</p>
+  <!-- <p>{{searchQuery}}</p> -->
 
 
 </form>
