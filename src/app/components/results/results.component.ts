@@ -9,13 +9,18 @@ import { ResultlistService } from 'src/app/resultlist.service';
 
 export class ResultsComponent implements OnInit {
 
-  constructor(private searchResults: ResultlistService) { }
+  JSON;
+  data!: Array<any>;
+  constructor(private searchResults: ResultlistService) {
+    this.JSON = JSON;
+  }
 
   
   ngOnInit(): void {
     this.searchResults.searchClicked.subscribe( value => {
-      if(value === true){
-        console.log('hi');
+      if (value === true) {
+        this.data = this.searchResults.getSearchResults();
+        console.log(this.data);
       }
     })
   }

@@ -5,8 +5,9 @@
     "\\src\\app",
     "\\src\\app\\components",
     "\\src\\app\\components\\form",
-    "\\src\\app\\components\\results"
+    "\\src\\app\\components\\results",
+    "\\src\\app\\models"
   ],
-  "SelectedNode": "\\src\\app\\components\\form",
+  "SelectedNode": "\\src\\app\\resultlist.service.ts",
   "PreviewInSolutionExplorer": false
 }

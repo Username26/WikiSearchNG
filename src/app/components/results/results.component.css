@@ -12,9 +12,8 @@ body {
 
   .tilesWrap li {
     display: inline-block;
-    width: 20%;
-    min-width: 200px;
-    max-width: 230px;
+    width: 400%;
+
     padding: 80px 20px 40px;
     position: relative;
     vertical-align: top;
