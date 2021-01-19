@@ -19,7 +19,6 @@ app-root {
   column-gap: 2%;
   row-gap: 2%;
   position: absolute;
-  border-style: solid;
   border-radius: 20px;
   font-family: 'Poppins';
 }

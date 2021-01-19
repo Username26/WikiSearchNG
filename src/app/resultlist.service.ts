@@ -6,10 +6,10 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class ResultlistService {
 
-  private searchResults! : Array<any>;
+  private searchResults! : any;
   searchClicked : BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
-  addSearchResults(results: Array<any>){
+  addSearchResults(results: any){
     this.searchResults = results;
   }
 

@@ -10,7 +10,8 @@ import { ResultlistService } from 'src/app/resultlist.service';
 export class ResultsComponent implements OnInit {
 
   JSON;
-  data!: Array<any>;
+  data!: any;
+  
   constructor(private searchResults: ResultlistService) {
     this.JSON = JSON;
   }
@@ -19,7 +20,7 @@ export class ResultsComponent implements OnInit {
   ngOnInit(): void {
     this.searchResults.searchClicked.subscribe( value => {
       if (value === true) {
-        this.data = this.searchResults.getSearchResults();
+        this.data = JSON.parse(JSON.stringify(this.searchResults.getSearchResults()).replace(/\\r\\n/g, '<br/>'));
         console.log(this.data);
       }
     })

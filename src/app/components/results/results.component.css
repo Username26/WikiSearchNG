@@ -42,6 +42,7 @@ body {
     }
 
     .tilesWrap li p {
+      white-space: pre-wrap;
       font-size: 16px;
       line-height: 18px;
       color: #b7b7b7;

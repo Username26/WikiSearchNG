@@ -1,81 +1,81 @@
 <ul class="tilesWrap">
   <li>
     <h2>01</h2>
-    <h3>{{JSON.stringify(data[0].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[0].content)}}
+    <h3>{{JSON.stringify(data.response.docs[0].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[0].id].content[0]))">
     </p>
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[0].image[0]))}}' alt="">
   </li>
   <li>
     <h2>02</h2>
-    <h3>{{JSON.stringify(data[1].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[1].content)}}
+    <h3>{{JSON.stringify(data.response.docs[1].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[1].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[1].image[0]))}}'
+      alt="">
   </li>
   <li>
     <h2>03</h2>
-    <h3>{{JSON.stringify(data[2].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[2].content)}}
+    <h3>{{JSON.stringify(data.response.docs[2].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[2].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[2].image[0]))}}'
+      alt="">
   </li>
   <li>
     <h2>04</h2>
-    <h3>{{JSON.stringify(data[3].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[3].content)}}
+    <h3>{{JSON.stringify(data.response.docs[3].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[3].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[3].image[0]))}}'
+      alt="">
   <li>
     <h2>05</h2>
-    <h3>{{JSON.stringify(data[4].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[4].content)}}
+    <h3>{{JSON.stringify(data.response.docs[4].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[4].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[4].image[0]))}}'
+      alt="">
   </li>
 </ul>
 <ul class="tilesWrap">
   <li>
     <h2>06</h2>
-    <h3>{{JSON.stringify(data[5].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[5].content)}}
+    <h3>{{JSON.stringify(data.response.docs[5].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[5].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[5].image[0]))}}'
+      alt="">
   </li>
   <li>
     <h2>07</h2>
-    <h3>{{JSON.stringify(data[6].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[6].content)}}
+    <h3>{{JSON.stringify(data.response.docs[6].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[6].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[6].image[0]))}}'
+      alt="">
   </li>
   <li>
     <h2>08</h2>
-    <h3>{{JSON.stringify(data[7].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[7].content)}}
+    <h3>{{JSON.stringify(data.response.docs[7].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[7].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[7].image[0]))}}'
+      alt="">
   </li>
   <li>
     <h2>09</h2>
-    <h3>{{JSON.stringify(data[8].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[8].content)}}
+    <h3>{{JSON.stringify(data.response.docs[8].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[8].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[8].image[0]))}}'
+      alt="">
   <li>
     <h2>10</h2>
-    <h3>{{JSON.stringify(data[9].id)}}</h3>
-    <p>
-      {{JSON.stringify(data[9].content)}}
+    <h3>{{JSON.stringify(data.response.docs[9].id)}}</h3>
+    <p [innerHTML]="JSON.parse(JSON.stringify(data.highlighting[data.response.docs[9].id].content[0]))">
     </p>
-
+    <img src='{{"assets/img/" + JSON.parse(JSON.stringify(data.response.docs[9].image[0]))}}'
+      alt="">
   </li>
 </ul>

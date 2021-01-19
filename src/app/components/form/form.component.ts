@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class FormComponent implements OnInit {
 
   searchQuery:string="";
-  url = '/solr/wiki/select?indent=on&defType=dismax&df=content&qf=id^20.0+content^2&q='
+  url = '/solr/wiki/select?indent=on&hl=on&hl.fl=content&defType=dismax&df=content&qf=id^20.0+content^2&hl.method=unified&hl.fragsize=0&q='
 
   constructor(private http: HttpClient, private searchResult: ResultlistService, private router: Router){ 
   }
@@ -31,7 +31,7 @@ export class FormComponent implements OnInit {
     //   console.log(data.response.docs[0].)
     // }));
     (this.http.get<any>(this.url + this.searchQuery).toPromise().then(data => {
-      this.searchResult.addSearchResults(data.response.docs);
+      this.searchResult.addSearchResults(data);
     }));
     // setTimeout(() => {console.log(this.searchResult.getSearchResults())}, 200 );
     setTimeout(() => {this.router.navigate(['/results'])}, 300)
