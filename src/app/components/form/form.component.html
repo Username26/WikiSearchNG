@@ -42,8 +42,8 @@
     <div class="text">PIRATEPEDIA</div>
   </div>
   <h1>PIRATEPEDIA</h1>
-  <input type="text" id="searchQuery" (keyup)="onKey($event)"><br>
-  <input type="button" value="Search" (click)="onSearch()">
+  <input type="text" id="searchQuery" (keydown.enter)="onSearch($event)" (keyup)="onKey($event)" ><br>
+  <input type="button" value="Search" (click)="onSearch($event)">
   <input type="reset" value="Clear">
   <!-- <p>{{searchQuery}}</p> -->
 

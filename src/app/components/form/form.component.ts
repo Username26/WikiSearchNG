@@ -26,7 +26,8 @@ export class FormComponent implements OnInit {
     this.searchQuery = event.target.value;
   }
 
-  onSearch(){
+  onSearch(event: any){
+    event.preventDefault();
     // (this.http.get<any>(this.url + this.searchQuery).toPromise().then(data => {
     //   console.log(data.response.docs[0].)
     // }));
